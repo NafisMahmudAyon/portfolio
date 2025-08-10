@@ -103,7 +103,7 @@ const IconSection = () => {
               {
                 icon: <TSIcon className='aspect-square w-10' />,
                 text: 'TS',
-                progress: 80,
+                progress: 90,
                 initialAnimation: 'bottom',
                 progressStyle: ''
               },
@@ -163,7 +163,7 @@ const IconSection = () => {
               {
                 icon: <ExpressIcon className='aspect-square w-10' />,
                 text: 'Express',
-                progress: 70
+                progress: 80
               },
               {
                 icon: <MySQLIcon className='aspect-square w-10' />,
@@ -178,7 +178,7 @@ const IconSection = () => {
               {
                 icon: <MongoDBIcon className='aspect-square w-10' />,
                 text: 'MongoDB',
-                progress: 60
+                progress: 80
               }
             ].map((icon, i) => {
               return (
