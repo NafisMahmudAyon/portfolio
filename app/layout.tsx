@@ -106,11 +106,11 @@ export default function RootLayout({
     jobTitle: 'Frontend Developer',
     worksFor: {
       '@type': 'Organization',
-      name: 'Aspect UI'
+      name: 'NafisBD'
     },
     alumniOf: {
-      '@type': 'CollegeOrUniversity',
-      name: 'Your University Name'
+      '@type': 'University',
+      name: 'National University of Bangladesh'
     },
     description:
       'Nafis Mahmud Ayon is a frontend developer, open-source contributor, and creator of Aspect UI. He builds modern web applications and UI libraries.',
