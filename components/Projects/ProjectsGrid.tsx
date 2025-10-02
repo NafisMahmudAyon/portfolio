@@ -3,10 +3,10 @@ import { poppins } from '@/app/fonts'
 // import { supabase } from '@/components/createClient'
 import data from '@/public/project-data.json'
 import { motion, useAnimation, useInView } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useRef } from 'react'
 import { GithubIcon, LinkIcon } from '../Icons'
+import { ScrollableImage } from '../ScrollableImage'
 import { Badge, Card } from '../aspect-ui'
 
 export interface Project {
@@ -43,6 +43,7 @@ export interface Project {
   likes: number
   comments?: string | null
   description: string[]
+  mode?: "normal" | "scroll" // default normal
 }
 
 const ProjectsGrid: React.FC = () => {
@@ -102,12 +103,12 @@ const ProjectsGrid: React.FC = () => {
       className={`px-4 pb-20 md:px-8 lg:px-16 ${poppins.className}`}
     >
       <div className='grid grid-cols-1 grid-rows-[repeat(5_,_auto)] gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-        {data.map((project,index) => (
-          [2, 3, 6].includes(index) && <Card
+        {data.map((project, index) => (
+          [2, 6, 7, 10, 9, 8].includes(index) && <Card
             key={project.id}
             className='relative row-span-5 grid grid-rows-subgrid gap-0 overflow-hidden rounded-lg py-0 group'
           >
-            <div className='overflow-hidden'>
+            {/* <div className='overflow-hidden'>
               <Image
                 src={
                   project.project_images.length === 0
@@ -119,7 +120,28 @@ const ProjectsGrid: React.FC = () => {
                 alt={project.title}
                 className='aspect-[3/2] grid-rows-subgrid w-full object-cover group-hover:scale-110 transition-transform duration-200 ease-in-out'
               />
-            </div>
+            </div> */}
+            {/* <ScrollImage
+              src={
+                project.project_images.length === 0
+                  ? "https://via.placeholder.com/600x400"
+                  : project.project_images[0]
+              }
+              alt={project.title}
+              width={600}
+              height={400}
+              mode={project?.mode || "normal"}
+            /> */}
+            <ScrollableImage
+              src={
+                project.project_images.length === 0
+                  ? "https://via.placeholder.com/600x400"
+                  : project.project_images[0]
+              }
+              alt={project.title}
+              containerHeight="200px"
+              isScroll={project.mode === "scroll"}
+            />
             <Link href={project.redirect ? project.redirect_url : `/projects/${project.slug}`} className='absolute inset-0'></Link>
 
             <h4

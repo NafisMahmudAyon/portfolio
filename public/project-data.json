@@ -337,7 +337,8 @@
         "desc": "Actively maintained with frequent updates and community support."
       }
     ],
-    "blog": "# ComboBlocks: A Feature-Rich Gutenberg Block Library for WordPress\n\nGutenberg, WordPress' block editor, has transformed content creation, and ComboBlocks takes it to the next level. Designed for flexibility and ease of use, ComboBlocks enhances WordPress websites by offering powerful, customizable blocks that improve design and functionality.\n\n---\n\n## What is ComboBlocks?\n\nComboBlocks is a collection of Gutenberg blocks crafted to provide a seamless content-building experience. With advanced customization options, responsive layouts, and a focus on performance, it empowers users to create stunning pages without writing code.\n\n---\n\n## Key Features\n\n- Diverse Block Collection: Includes content, layout, and media-focused blocks for various needs.\n- Customization Controls: Fine-tune block styles, colors, typography, and spacing.\n- Mobile Responsiveness: Ensures all blocks adapt beautifully across devices.\n- Performance First: Built with clean, efficient code to keep websites fast.\n- Drag-and-Drop Editing: A true WYSIWYG experience inside the block editor.\n- Frequent Updates: Regular improvements and new block additions.\n\n---\n\n## Included Blocks\n\n### Content Blocks\n- Advanced Heading: Stylized headings with custom fonts and animations.\n- Button Group: Multiple buttons with alignment and spacing controls.\n- Icon Box: Text with an accompanying icon for enhanced visual appeal.\n- Testimonial: Showcase customer reviews with elegant layouts.\n- Accordion: Collapsible content sections for FAQs and organized displays.\n\n### Layout & Grid Blocks\n- Container: A flexible wrapper for organizing content.\n- Columns Manager: Create multi-column layouts with ease.\n- Spacer/Divider: Adjust spacing between elements.\n\n### Media & Interactive Blocks\n- Image Gallery: Stylish galleries with lightbox support.\n- Video Embed: Responsive video embedding from various sources.\n- Tabs: Switchable content areas for organized sections.\n- Countdown Timer: Displays a live countdown for promotions and events.\n\n---\n\n## How to Get Started\n\n### Installation\n\nInstall ComboBlocks from the WordPress plugin repository or manually upload the plugin:Navigate to Plugins > Add New in your WordPress dashboard.Search for ComboBlocks.Click Install Now and then Activate.Example Usage\n\nOnce installed, simply add a new post or page, click Add Block (+), and select from the ComboBlocks library.---\n\n## Why Choose ComboBlocks?\n\n- User-Friendly: No coding required, making it accessible for all users.\n- Extensive Customization: Modify every aspect of a block to match your design.\n- Lightweight & Fast: Doesn't slow down your site.\n- SEO & Accessibility Friendly: Ensures better visibility and usability.\n\nWith ComboBlocks, WordPress users can create professional, engaging pages effortlessly.\n","challenges_faced": "",
+    "blog": "# ComboBlocks: A Feature-Rich Gutenberg Block Library for WordPress\n\nGutenberg, WordPress' block editor, has transformed content creation, and ComboBlocks takes it to the next level. Designed for flexibility and ease of use, ComboBlocks enhances WordPress websites by offering powerful, customizable blocks that improve design and functionality.\n\n---\n\n## What is ComboBlocks?\n\nComboBlocks is a collection of Gutenberg blocks crafted to provide a seamless content-building experience. With advanced customization options, responsive layouts, and a focus on performance, it empowers users to create stunning pages without writing code.\n\n---\n\n## Key Features\n\n- Diverse Block Collection: Includes content, layout, and media-focused blocks for various needs.\n- Customization Controls: Fine-tune block styles, colors, typography, and spacing.\n- Mobile Responsiveness: Ensures all blocks adapt beautifully across devices.\n- Performance First: Built with clean, efficient code to keep websites fast.\n- Drag-and-Drop Editing: A true WYSIWYG experience inside the block editor.\n- Frequent Updates: Regular improvements and new block additions.\n\n---\n\n## Included Blocks\n\n### Content Blocks\n- Advanced Heading: Stylized headings with custom fonts and animations.\n- Button Group: Multiple buttons with alignment and spacing controls.\n- Icon Box: Text with an accompanying icon for enhanced visual appeal.\n- Testimonial: Showcase customer reviews with elegant layouts.\n- Accordion: Collapsible content sections for FAQs and organized displays.\n\n### Layout & Grid Blocks\n- Container: A flexible wrapper for organizing content.\n- Columns Manager: Create multi-column layouts with ease.\n- Spacer/Divider: Adjust spacing between elements.\n\n### Media & Interactive Blocks\n- Image Gallery: Stylish galleries with lightbox support.\n- Video Embed: Responsive video embedding from various sources.\n- Tabs: Switchable content areas for organized sections.\n- Countdown Timer: Displays a live countdown for promotions and events.\n\n---\n\n## How to Get Started\n\n### Installation\n\nInstall ComboBlocks from the WordPress plugin repository or manually upload the plugin:Navigate to Plugins > Add New in your WordPress dashboard.Search for ComboBlocks.Click Install Now and then Activate.Example Usage\n\nOnce installed, simply add a new post or page, click Add Block (+), and select from the ComboBlocks library.---\n\n## Why Choose ComboBlocks?\n\n- User-Friendly: No coding required, making it accessible for all users.\n- Extensive Customization: Modify every aspect of a block to match your design.\n- Lightweight & Fast: Doesn't slow down your site.\n- SEO & Accessibility Friendly: Ensures better visibility and usability.\n\nWith ComboBlocks, WordPress users can create professional, engaging pages effortlessly.\n",
+    "challenges_faced": "",
     "lessons_learned": "",
     "team_size": 3,
     "collaborators": [],
@@ -535,279 +536,447 @@
     ]
   },
   {
-  "id": 7,
-  "created_at": "2025-03-28T00:00:00.000+00:00",
-  "title": "Envobyte Digital Services",
-  "slug": "envobyte-digital-services",
-  "short_description": "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions to elevate your business.",
-  "project_type": [
-    "Web Design",
-    "Web Development",
-    "Digital Marketing",
-    "SEO",
-    "Logo Design",
-    "Banner Design",
-    "Google Ads Management"
-  ],
-  "project_status": "Ongoing",
-  "date_started": "2020-01-01",
-  "tech_use": [
-    "WordPress",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "PHP",
-    "MySQL"
-  ],
-  "project_url": "https://envobyte.nafisbd.com/",
-  "redirect": true,
-  "redirect_url": "https://envobyte.nafisbd.com/",
-  "role": "Service Provider",
-  "client_name": "Various Clients",
-  "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
-  "key_features": [
-    {
-      "title": "Custom Website Development",
-      "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
-    },
-    {
-      "title": "Mobile App Development",
-      "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
-    },
-    {
-      "title": "Monthly SEO Services",
-      "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
-    },
-    {
-      "title": "Logo Design",
-      "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
-    },
-    {
-      "title": "Google Ads Management",
-      "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
-    }
-  ],
-  "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
-  "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
-  "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
-  "team_size": 10,
-  "collaborators": [
-    "Mr. Anik - Backend Developer",
-    "Mr. Shahed - Frontend Developer",
-    "Mr. Mainul Islam - SEO Expert",
-    "Mr. Hasib - Content Writer"
-  ],
-  "project_images": [
-    "/envobyte.jpg",
-    "/portfolio-2.png",
-    "/portfolio-3.png"
-  ],
-  "project_videos": [],
-  "documentation_links": [],
-  "github_repo": "",
-  "downloadable_resources": [],
-  "updated_at": "2025-03-28T00:00:00.000",
-  "tags": [
-    "web-design",
-    "web-development",
-    "digital-marketing",
-    "seo",
-    "logo-design",
-    "banner-design",
-    "google-ads"
-  ],
-  "views_count": null,
-  "likes": null,
-  "comments": null,
-  "description": [
-    "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
-    "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
-    "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
-    "We have a proven track record of client satisfaction and successful project delivery."
-  ]
-},
+    "id": 7,
+    "created_at": "2025-03-28T00:00:00.000+00:00",
+    "title": "Envobyte Digital Services",
+    "slug": "envobyte-digital-services",
+    "short_description": "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions to elevate your business.",
+    "project_type": [
+      "Web Design",
+      "Web Development",
+      "Digital Marketing",
+      "SEO",
+      "Logo Design",
+      "Banner Design",
+      "Google Ads Management"
+    ],
+    "project_status": "Ongoing",
+    "date_started": "2020-01-01",
+    "tech_use": [
+      "WordPress",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "MySQL"
+    ],
+    "project_url": "https://envobyte.nafisbd.com/",
+    "redirect": true,
+    "redirect_url": "https://envobyte.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "Various Clients",
+    "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
+    "key_features": [
+      {
+        "title": "Custom Website Development",
+        "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
+      },
+      {
+        "title": "Mobile App Development",
+        "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
+      },
+      {
+        "title": "Monthly SEO Services",
+        "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
+      },
+      {
+        "title": "Logo Design",
+        "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
+      },
+      {
+        "title": "Google Ads Management",
+        "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
+      }
+    ],
+    "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
+    "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
+    "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
+    "team_size": 1,
+    "collaborators": [
+      "Nafis Mahmud Ayon"
+    ],
+    "project_images": [
+      "/envobyte.png",
+      "/portfolio-2.png",
+      "/portfolio-3.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-03-28T00:00:00.000",
+    "tags": [
+      "web-design",
+      "web-development",
+      "digital-marketing",
+      "seo",
+      "logo-design",
+      "banner-design",
+      "google-ads"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
+      "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
+      "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
+      "We have a proven track record of client satisfaction and successful project delivery."
+    ],
+    "mode": "scroll"
+  },
   {
-  "id": 8,
-  "created_at": "2025-03-28T00:00:00.000+00:00",
-  "title": "Real Estate Agency",
-  "slug": "real-estate-agency",
-  "short_description": "Estate Haven is a premium real estate platform showcasing luxury villas, apartments, and homes in top global locations with expert guidance and a seamless buying experience.",
-  "project_type": [
-    "Web Design",
-    "Web Development",
-    "Digital Marketing",
-    "SEO",
-    "Logo Design",
-    "Banner Design",
-    "Google Ads Management"
-  ],
-  "project_status": "Ongoing",
-  "date_started": "2020-01-01",
-  "tech_use": [
-    "WordPress",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "PHP",
-    "MySQL"
-  ],
-  "project_url": "https://real-estate.nafisbd.com/",
-  "redirect": true,
-  "redirect_url": "https://real-estate.nafisbd.com/",
-  "role": "Service Provider",
-  "client_name": "Various Clients",
-  "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
-  "key_features": [
-    {
-      "title": "Custom Website Development",
-      "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
-    },
-    {
-      "title": "Mobile App Development",
-      "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
-    },
-    {
-      "title": "Monthly SEO Services",
-      "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
-    },
-    {
-      "title": "Logo Design",
-      "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
-    },
-    {
-      "title": "Google Ads Management",
-      "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
-    }
-  ],
-  "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
-  "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
-  "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
-  "team_size": 10,
-  "collaborators": [
-    "Mr. Anik - Backend Developer",
-    "Mr. Shahed - Frontend Developer",
-    "Mr. Mainul Islam - SEO Expert",
-    "Mr. Hasib - Content Writer"
-  ],
-  "project_images": [
-    "/real-estate.jpg",
-    "/portfolio-2.png",
-    "/portfolio-3.png"
-  ],
-  "project_videos": [],
-  "documentation_links": [],
-  "github_repo": "",
-  "downloadable_resources": [],
-  "updated_at": "2025-03-28T00:00:00.000",
-  "tags": [
-    "web-design",
-    "web-development",
-    "digital-marketing",
-    "seo",
-    "logo-design",
-    "banner-design",
-    "google-ads"
-  ],
-  "views_count": null,
-  "likes": null,
-  "comments": null,
-  "description": [
-    "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
-    "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
-    "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
-    "We have a proven track record of client satisfaction and successful project delivery."
-  ]
-},
+    "id": 8,
+    "created_at": "2025-03-28T00:00:00.000+00:00",
+    "title": "Real Estate Agency",
+    "slug": "real-estate-agency",
+    "short_description": "Estate Haven is a premium real estate platform showcasing luxury villas, apartments, and homes in top global locations with expert guidance and a seamless buying experience.",
+    "project_type": [
+      "Web Design",
+      "Web Development",
+      "Digital Marketing",
+      "SEO",
+      "Logo Design",
+      "Banner Design",
+      "Google Ads Management"
+    ],
+    "project_status": "Ongoing",
+    "date_started": "2020-01-01",
+    "tech_use": [
+      "WordPress",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "MySQL"
+    ],
+    "project_url": "https://real-estate.nafisbd.com/",
+    "redirect": true,
+    "redirect_url": "https://real-estate.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "Various Clients",
+    "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
+    "key_features": [
+      {
+        "title": "Custom Website Development",
+        "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
+      },
+      {
+        "title": "Mobile App Development",
+        "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
+      },
+      {
+        "title": "Monthly SEO Services",
+        "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
+      },
+      {
+        "title": "Logo Design",
+        "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
+      },
+      {
+        "title": "Google Ads Management",
+        "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
+      }
+    ],
+    "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
+    "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
+    "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
+    "team_size": 1,
+    "collaborators": [
+      "Nafis Mahmud Ayon"
+    ],
+    "project_images": [
+      "/real-estate.png",
+      "/portfolio-2.png",
+      "/portfolio-3.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-03-28T00:00:00.000",
+    "tags": [
+      "web-design",
+      "web-development",
+      "digital-marketing",
+      "seo",
+      "logo-design",
+      "banner-design",
+      "google-ads"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
+      "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
+      "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
+      "We have a proven track record of client satisfaction and successful project delivery."
+    ],
+    "mode": "scroll"
+  },
   {
-  "id": 9,
-  "created_at": "2025-03-28T00:00:00.000+00:00",
-  "title": "Travel Bangladesh",
-  "slug": "travel-bangladesh",
-  "short_description": "​Discover Bangladesh Tours offers immersive travel experiences across Bangladesh, featuring destinations like Cox's Bazar, the Sundarbans, and Sylhet's tea gardens. They provide services including hotel and flight bookings, transportation, and professional tour guides to ensure a seamless journey.",
-  "project_type": [
-    "Web Design",
-    "Web Development",
-    "Digital Marketing",
-    "SEO",
-    "Logo Design",
-    "Banner Design",
-    "Google Ads Management"
-  ],
-  "project_status": "Ongoing",
-  "date_started": "2020-01-01",
-  "tech_use": [
-    "WordPress",
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "PHP",
-    "MySQL"
-  ],
-  "project_url": "https://travel-bangladesh.nafisbd.com/",
-  "redirect": true,
-  "redirect_url": "https://travel-bangladesh.nafisbd.com/",
-  "role": "Service Provider",
-  "client_name": "Various Clients",
-  "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
-  "key_features": [
-    {
-      "title": "Custom Website Development",
-      "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
-    },
-    {
-      "title": "Mobile App Development",
-      "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
-    },
-    {
-      "title": "Monthly SEO Services",
-      "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
-    },
-    {
-      "title": "Logo Design",
-      "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
-    },
-    {
-      "title": "Google Ads Management",
-      "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
-    }
-  ],
-  "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
-  "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
-  "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
-  "team_size": 10,
-  "collaborators": [
-    "Mr. Anik - Backend Developer",
-    "Mr. Shahed - Frontend Developer",
-    "Mr. Mainul Islam - SEO Expert",
-    "Mr. Hasib - Content Writer"
-  ],
-  "project_images": [
-    "/travel-bangladesh.jpg",
-    "/portfolio-2.png",
-    "/portfolio-3.png"
-  ],
-  "project_videos": [],
-  "documentation_links": [],
-  "github_repo": "",
-  "downloadable_resources": [],
-  "updated_at": "2025-03-28T00:00:00.000",
-  "tags": [
-    "web-design",
-    "web-development",
-    "digital-marketing",
-    "seo",
-    "logo-design",
-    "banner-design",
-    "google-ads"
-  ],
-  "views_count": null,
-  "likes": null,
-  "comments": null,
-  "description": [
-    "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
-    "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
-    "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
-    "We have a proven track record of client satisfaction and successful project delivery."
-  ]
-}
+    "id": 9,
+    "created_at": "2025-03-28T00:00:00.000+00:00",
+    "title": "Travel Bangladesh",
+    "slug": "travel-bangladesh",
+    "short_description": "​Discover Bangladesh Tours offers immersive travel experiences across Bangladesh, featuring destinations like Cox's Bazar, the Sundarbans, and Sylhet's tea gardens. They provide services including hotel and flight bookings, transportation, and professional tour guides to ensure a seamless journey.",
+    "project_type": [
+      "Web Design",
+      "Web Development",
+      "Digital Marketing",
+      "SEO",
+      "Logo Design",
+      "Banner Design",
+      "Google Ads Management"
+    ],
+    "project_status": "Ongoing",
+    "date_started": "2020-01-01",
+    "tech_use": [
+      "WordPress",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "MySQL"
+    ],
+    "project_url": "https://travel-bangladesh.nafisbd.com/",
+    "redirect": true,
+    "redirect_url": "https://travel-bangladesh.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "Various Clients",
+    "client_feedback": "Highly satisfied with the quality and professionalism of Envobyte's services.",
+    "key_features": [
+      {
+        "title": "Custom Website Development",
+        "desc": "Tailored web solutions combining eye-catching design with smooth functionality to engage visitors and drive business success."
+      },
+      {
+        "title": "Mobile App Development",
+        "desc": "Seamless user experiences that boost revenue and delight users across various mobile platforms."
+      },
+      {
+        "title": "Monthly SEO Services",
+        "desc": "Enhancing online presence by improving rankings, attracting organic traffic, and boosting sales."
+      },
+      {
+        "title": "Logo Design",
+        "desc": "Captivating logos that embody unique brand identities and leave a memorable impact on the audience."
+      },
+      {
+        "title": "Google Ads Management",
+        "desc": "Maximizing brand visibility, driving traffic, and increasing sales through strategic ad campaigns."
+      }
+    ],
+    "blog": "# Envobyte Digital Services: Elevating Your Business Online\n\n## Overview\n\nEnvobyte is a premier IT company excelling in web design and development, offering exceptional creative services for websites, mobile apps, and comprehensive digital solutions. Backed by years of experience and skilled professionals, we propel brands to online success.\n\n---\n\n## Services\n\n- **Custom Website Development**: Eye-catching designs with smooth functionality.\n- **Mobile App Development**: Seamless user experiences across platforms.\n- **Monthly SEO Services**: Improved rankings and organic traffic.\n- **Logo Design**: Unique brand identities with memorable logos.\n- **Google Ads Management**: Strategic campaigns to maximize visibility and sales.\n\n---\n\n## How to Engage\n\n### 1. Explore Services\n- Visit our [website](https://envobyte.nafisbd.com/) to view our offerings.\n\n### 2. Book an Appointment\n- Use the 'Book An Appointment' feature to schedule a consultation.\n\n### 3. Start Your Project\n- Collaborate with our team to bring your ideas to life.\n\n---\n\n## Tech Stack\n\n- **WordPress** – Flexible content management system.\n- **HTML5 & CSS3** – Modern web markup and styling.\n- **JavaScript** – Dynamic and interactive web elements.\n- **PHP & MySQL** – Robust backend development and database management.\n\n---\n\n## Contact Us\n\nReach out via email at [support@envobyte.com](mailto:support@envobyte.com) or call us at +1 (667) 777 2477.\n\n---\n\n## Portfolio\n\nExplore our previous work: [Portfolio](https://envobyte.nafisbd.com/)\n",
+    "challenges_faced": "Ensuring seamless integration of various digital services while maintaining high-quality standards.",
+    "lessons_learned": "Optimized project management strategies and enhanced client communication for better service delivery.",
+    "team_size": 1,
+    "collaborators": [
+      "Nafis Mahmud Ayon"
+    ],
+    "project_images": [
+      "/travel-bangladesh.png",
+      "/portfolio-2.png",
+      "/portfolio-3.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-03-28T00:00:00.000",
+    "tags": [
+      "web-design",
+      "web-development",
+      "digital-marketing",
+      "seo",
+      "logo-design",
+      "banner-design",
+      "google-ads"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "Envobyte is a premier IT company specializing in web design, development, and comprehensive digital solutions.",
+      "We offer services including custom website development, mobile app development, SEO, logo design, and Google Ads management.",
+      "Our team consists of experienced professionals dedicated to delivering high-quality digital services.",
+      "We have a proven track record of client satisfaction and successful project delivery."
+    ],
+    "mode": "scroll"
+  },
+  {
+    "id": 10,
+    "created_at": "2025-03-30T00:00:00.000+00:00",
+    "title": "Real Estate Landing Page",
+    "slug": "real-estate-landing-page",
+    "short_description": "A modern and responsive real estate landing page designed to showcase properties, highlight features, and drive leads with a clean and professional UI/UX. Built with performance and SEO in mind, ensuring high conversion rates for property businesses.",
+    "project_type": [
+      "Landing Page Design",
+      "Web Development",
+      "UI/UX Design",
+      "SEO Optimization",
+      "Responsive Design"
+    ],
+    "project_status": "Completed",
+    "date_started": "2022-05-01",
+    "tech_use": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "PHP",
+      "MySQL"
+    ],
+    "project_url": "https://realestate.nafisbd.com/",
+    "redirect": true,
+    "redirect_url": "https://realestate.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "Confidential (Real Estate Business)",
+    "client_feedback": "The landing page significantly improved lead generation and provided a professional online presence.",
+    "key_features": [
+      {
+        "title": "Property Showcase",
+        "desc": "Highlighting properties with images, descriptions, and key details for potential buyers."
+      },
+      {
+        "title": "Lead Capture Form",
+        "desc": "Integrated forms for inquiries and lead collection to connect buyers with agents."
+      },
+      {
+        "title": "SEO Optimized",
+        "desc": "Optimized structure and content for search engines to increase organic visibility."
+      },
+      {
+        "title": "Responsive Design",
+        "desc": "Mobile-friendly design ensuring smooth browsing across all devices."
+      },
+      {
+        "title": "Fast Performance",
+        "desc": "Optimized loading speed for better user experience and conversion rates."
+      }
+    ],
+    "blog": "# Real Estate Landing Page Project\n\n## Overview\n\nThe Real Estate Landing Page is a professionally crafted website designed to help real estate businesses showcase properties, capture leads, and boost conversions. With a sleek UI and responsive design, it ensures a seamless user experience.\n\n---\n\n## Features\n\n- **Property Showcase**: Display property listings with images and descriptions.\n- **Lead Capture Form**: Collect client inquiries directly.\n- **SEO Optimized**: Improve rankings and attract organic traffic.\n- **Responsive Design**: Accessible across all devices.\n- **Fast Performance**: Optimized for speed and smooth browsing.\n\n---\n\n## How It Helps\n\n- Builds credibility for real estate businesses.\n- Increases inquiries and lead generation.\n- Creates a professional online presence.\n\n---\n\n## Tech Stack\n\n- **HTML5 & CSS3** – Modern, semantic design.\n- **JavaScript** – Interactive elements.\n- **Bootstrap** – Responsive and fast layout.\n- **PHP & MySQL** – Backend processing and lead storage.\n\n---\n\n## Contact\n\nFor similar landing pages or custom real estate solutions, reach out at [support@envobyte.com](mailto:support@envobyte.com).\n",
+    "challenges_faced": "Creating a visually appealing design while ensuring fast load times and proper lead capture functionality.",
+    "lessons_learned": "Learned how to balance modern UI/UX with technical SEO and conversion-focused design.",
+    "team_size": 1,
+    "collaborators": [
+      "Nafis Mahmud Ayon"
+    ],
+    "project_images": [
+      "/real-estate-homez.png",
+      "/portfolio-realestate-1.png",
+      "/portfolio-realestate-2.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-03-30T00:00:00.000",
+    "tags": [
+      "real-estate",
+      "landing-page",
+      "web-design",
+      "web-development",
+      "seo",
+      "responsive-design"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "A professional real estate landing page built for high conversion and lead generation.",
+      "Features include property showcase, lead capture form, SEO optimization, and fast performance.",
+      "Developed with responsive design principles for seamless browsing on all devices.",
+      "Successfully helped clients improve online presence and generate more inquiries."
+    ],
+    "mode": "scroll"
+  },
+  {
+    "id": 11,
+    "created_at": "2025-03-30T00:00:00.000+00:00",
+    "title": "Airbnb Landing Page",
+    "slug": "airbnb-landing-page",
+    "short_description": "A modern Airbnb-style landing page crafted with responsive design, smooth animations, and user-friendly layout to showcase rental listings and capture potential customers effectively.",
+    "project_type": [
+      "Landing Page Design",
+      "Web Development",
+      "UI/UX Design",
+      "Responsive Design",
+      "SEO Optimization"
+    ],
+    "project_status": "Completed",
+    "date_started": "2022-08-01",
+    "tech_use": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "PHP",
+      "MySQL"
+    ],
+    "project_url": "https://airbnb.nafisbd.com/",
+    "redirect": true,
+    "redirect_url": "https://airbnb.nafisbd.com/",
+    "role": "Developer",
+    "client_name": "Concept Project",
+    "client_feedback": "The landing page effectively showcased the Airbnb concept with a clean and modern interface.",
+    "key_features": [
+      {
+        "title": "Property Showcase",
+        "desc": "Beautifully displayed property sections highlighting unique stays, images, and descriptions."
+      },
+      {
+        "title": "Search & Explore Section",
+        "desc": "Interactive design to mimic browsing and discovering unique rentals like Airbnb."
+      },
+      {
+        "title": "Responsive Design",
+        "desc": "Ensures the landing page works seamlessly on mobile, tablet, and desktop."
+      },
+      {
+        "title": "Modern UI/UX",
+        "desc": "Minimal, clean, and engaging design with focus on usability and conversions."
+      },
+      {
+        "title": "SEO Optimized",
+        "desc": "Built with proper structure and meta details for better search visibility."
+      }
+    ],
+    "blog": "# Airbnb Landing Page Project\n\n## Overview\n\nThe Airbnb Landing Page is a modern web design concept inspired by Airbnb’s booking and property showcase experience. The landing page focuses on highlighting unique rentals, providing a smooth browsing flow, and capturing leads effectively.\n\n---\n\n## Features\n\n- **Property Showcase**: Eye-catching rental listings with images and descriptions.\n- **Search & Explore Section**: Mimics browsing Airbnb-style experiences.\n- **Responsive Design**: Works seamlessly across all devices.\n- **Modern UI/UX**: Clean, user-friendly interface.\n- **SEO Optimized**: Structured content for better visibility.\n\n---\n\n## Benefits\n\n- Provides real estate and rental businesses a professional showcase.\n- Helps attract new clients through visually appealing design.\n- Enhances credibility and brand value with modern UI/UX.\n\n---\n\n## Tech Stack\n\n- **HTML5 & CSS3** – For structure and styling.\n- **JavaScript** – Adds interactivity.\n- **Bootstrap** – Responsive layout.\n- **PHP & MySQL** – For backend and lead management.\n\n---\n\n## Contact\n\nFor custom landing pages or Airbnb-inspired designs, reach out at [support@envobyte.com](mailto:support@envobyte.com).\n",
+    "challenges_faced": "Capturing the essence of Airbnb’s design while keeping the page lightweight and optimized for performance.",
+    "lessons_learned": "Gained experience in blending minimalist UI with conversion-focused elements.",
+    "team_size": 1,
+    "collaborators": [
+      "Nafis Mahmud Ayon"
+    ],
+    "project_images": [
+      "/airbnb-nafisbd.png",
+      "/portfolio-airbnb-1.png",
+      "/portfolio-airbnb-2.png"
+    ],
+    "project_videos": [],
+    "documentation_links": [],
+    "github_repo": "",
+    "downloadable_resources": [],
+    "updated_at": "2025-03-30T00:00:00.000",
+    "tags": [
+      "airbnb",
+      "landing-page",
+      "web-design",
+      "web-development",
+      "responsive-design",
+      "ui-ux"
+    ],
+    "views_count": null,
+    "likes": null,
+    "comments": null,
+    "description": [
+      "A modern Airbnb-inspired landing page designed with responsive layout and engaging UI.",
+      "Includes property showcase, search & explore features, and SEO optimization.",
+      "Focused on high-quality visuals and smooth user experience.",
+      "Perfect for real estate, rental, or hospitality businesses seeking online presence."
+    ],
+    "mode": "scroll"
+  }
 ]

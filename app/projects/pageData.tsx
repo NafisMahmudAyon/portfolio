@@ -3,9 +3,9 @@ import { Breadcrumb, BreadcrumbItem, Card } from '@/components/aspect-ui'
 import Footer from '@/components/Footer/Footer'
 import { GithubIcon, LinkIcon } from '@/components/Icons'
 import PageTitle from '@/components/PageTitle'
+import { ScrollableImage } from '@/components/ScrollableImage'
 import data from '@/public/project-data.json'
 import { useAnimation, useInView } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
 import { poppins } from '../fonts'
@@ -60,7 +60,7 @@ const PageData = () => {
                 key={project.id}
                 className='group relative row-span-5 grid grid-rows-subgrid gap-0 overflow-hidden rounded-lg py-0 drop-shadow-lg'
               >
-                <div className='overflow-hidden'>
+                {/* <div className='overflow-hidden'>
                   <Image
                     src={
                       project.project_images.length === 0
@@ -74,13 +74,24 @@ const PageData = () => {
                     alt={project.title}
                     className='aspect-[3/2] w-full grid-rows-subgrid object-contain transition-transform duration-200 ease-in-out group-hover:scale-110'
                   />
-                </div>
+                </div> */}
+                <ScrollableImage
+                  src={
+                    project.project_images.length === 0
+                      ? "https://via.placeholder.com/600x400"
+                      : project.project_images[0]
+                  }
+                  alt={project.title}
+                  containerHeight="200px"
+                  isScroll={project.mode === "scroll"}
+                />
                 <Link
                   href={
                     project.redirect
                       ? project.redirect_url
                       : `/projects/${project.slug}`
                   }
+                  target='_blank'
                   className='absolute inset-0'
                 ></Link>
                 <h4
