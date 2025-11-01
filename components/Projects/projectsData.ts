@@ -74,88 +74,88 @@ const projectData = [
       'making it a versatile addition to any project.'
     ]
   },
-  {
-    id: 1,
-    created_at: '2024-02-25T02:16:06+00:00',
-    title: 'Landing Page UI',
-    short_description:
-      'Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
-    project_type: ['Web Development'],
-    project_status: 'I',
-    date_started: '2024-02-25',
-    date_complete: '2024-08-26',
-    tech_use: ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind', 'NextJS'],
-    project_url: 'https://ui.nafisbd.com/',
-    role: 'Author',
-    client_name: null,
-    client_feedback: null,
-    key_features: [
-      {
-        desc: 'Quickly get started by installing the package with npm install landing-page-ui.',
-        title: 'Ease of Installation'
-      },
-      {
-        desc: 'Includes essential components like Accordions, Avatars, Cards, Grids, and more, to build comprehensive landing pages.',
-        title: 'Wide Range of Components'
-      },
-      {
-        desc: 'All components are designed to be fully responsive, ensuring a seamless user experience across different devices.',
-        title: 'Responsive Design'
-      },
-      {
-        desc: 'Offers flexibility with customizable properties, allowing developers to tailor the components to fit specific branding and design requirements.',
-        title: 'Customizable Elements'
-      },
-      {
-        desc: 'Includes a Theme Switcher hook to easily toggle between light and dark modes.',
-        title: 'Theme Switching'
-      },
-      {
-        desc: 'Components are optimized for performance, ensuring fast load times and smooth interactions.',
-        title: 'Performance Optimized'
-      },
-      {
-        desc: 'Components are designed to be used independently or together, providing flexibility in how they are integrated into projects.',
-        title: 'Modular Structure'
-      },
-      {
-        desc: 'Emphasizes a clean and modern design aesthetic, making it easy to create professional-looking landing pages.',
-        title: 'Clean Design'
-      }
-    ],
-    challenges_faced: null,
-    lessons_learned: null,
-    team_size: 1,
-    collaborators: null,
-    project_images: [
-      'https://ui.nafisbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-img.14c847f7.png&w=3840&q=75'
-    ],
-    project_videos: null,
-    documentation_links: 'https://ui.nafisbd.com/install',
-    github_repo: 'https://github.com/NafisMahmudAyon/landing-page-ui.git',
-    downloadable_resources: null,
-    updated_at: '2024-08-26T08:35:03',
-    tags: [
-      'react',
-      'npm-package',
-      'ui-library',
-      'landing-page',
-      'frontend',
-      'responsive',
-      'components',
-      'design-system',
-      'web-development',
-      'clean-design'
-    ],
-    views_count: 508,
-    likes: 168,
-    comments: null,
-    description: [
-      'Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
-      '2Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
-      '3Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.'
-    ]
-  },
+  // {
+  //   id: 1,
+  //   created_at: '2024-02-25T02:16:06+00:00',
+  //   title: 'Landing Page UI',
+  //   short_description:
+  //     'Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
+  //   project_type: ['Web Development'],
+  //   project_status: 'I',
+  //   date_started: '2024-02-25',
+  //   date_complete: '2024-08-26',
+  //   tech_use: ['React', 'JavaScript', 'HTML', 'CSS', 'Tailwind', 'NextJS'],
+  //   project_url: 'https://ui.nafisbd.com/',
+  //   role: 'Author',
+  //   client_name: null,
+  //   client_feedback: null,
+  //   key_features: [
+  //     {
+  //       desc: 'Quickly get started by installing the package with npm install landing-page-ui.',
+  //       title: 'Ease of Installation'
+  //     },
+  //     {
+  //       desc: 'Includes essential components like Accordions, Avatars, Cards, Grids, and more, to build comprehensive landing pages.',
+  //       title: 'Wide Range of Components'
+  //     },
+  //     {
+  //       desc: 'All components are designed to be fully responsive, ensuring a seamless user experience across different devices.',
+  //       title: 'Responsive Design'
+  //     },
+  //     {
+  //       desc: 'Offers flexibility with customizable properties, allowing developers to tailor the components to fit specific branding and design requirements.',
+  //       title: 'Customizable Elements'
+  //     },
+  //     {
+  //       desc: 'Includes a Theme Switcher hook to easily toggle between light and dark modes.',
+  //       title: 'Theme Switching'
+  //     },
+  //     {
+  //       desc: 'Components are optimized for performance, ensuring fast load times and smooth interactions.',
+  //       title: 'Performance Optimized'
+  //     },
+  //     {
+  //       desc: 'Components are designed to be used independently or together, providing flexibility in how they are integrated into projects.',
+  //       title: 'Modular Structure'
+  //     },
+  //     {
+  //       desc: 'Emphasizes a clean and modern design aesthetic, making it easy to create professional-looking landing pages.',
+  //       title: 'Clean Design'
+  //     }
+  //   ],
+  //   challenges_faced: null,
+  //   lessons_learned: null,
+  //   team_size: 1,
+  //   collaborators: null,
+  //   project_images: [
+  //     'https://ui.nafisbd.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-img.14c847f7.png&w=3840&q=75'
+  //   ],
+  //   project_videos: null,
+  //   documentation_links: 'https://ui.nafisbd.com/install',
+  //   github_repo: 'https://github.com/NafisMahmudAyon/landing-page-ui.git',
+  //   downloadable_resources: null,
+  //   updated_at: '2024-08-26T08:35:03',
+  //   tags: [
+  //     'react',
+  //     'npm-package',
+  //     'ui-library',
+  //     'landing-page',
+  //     'frontend',
+  //     'responsive',
+  //     'components',
+  //     'design-system',
+  //     'web-development',
+  //     'clean-design'
+  //   ],
+  //   views_count: 508,
+  //   likes: 168,
+  //   comments: null,
+  //   description: [
+  //     'Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
+  //     '2Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.',
+  //     '3Landing Page UI is a React component library designed for creating visually appealing and responsive landing pages. The library emphasizes clean design, ease of use, and flexibility, allowing developers to create unique layouts that align with their branding and marketing goals.'
+  //   ]
+  // },
   {
     id: 2,
     created_at: '2024-08-30T09:17:22.277+00:00',

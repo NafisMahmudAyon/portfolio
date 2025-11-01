@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: 'Nafis Mahmud Ayon Portfolio',
     images: [
       {
-        url: 'https://nafisbd.com/images/nafis-mahmud-ayon.png',
+        url: 'https://nafisbd.com/nafis-mahmud-ayon.png',
         width: 1200,
         height: 630,
         alt: 'Nafis Mahmud Ayon'
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
     title: 'Nafis Mahmud Ayon | Portfolio',
     description:
       'I am a passionate software developer building modern web applications with React, Next.js, and Node.js.',
-    site: '@nafis_mahmud',
-    creator: '@nafis_mahmud',
-    images: ['https://nafisbd.com/images/nafis-mahmud-ayon.png']
+    site: '@nafis_ayon_bd',
+    creator: '@nafis_ayon_bd',
+    images: ['https://nafisbd.com/nafis-mahmud-ayon.png']
   },
 
   robots: {
@@ -85,7 +85,7 @@ export default function RootLayout({
     name: 'Nafis Mahmud Ayon',
     alternateName: 'Nafis Ayon',
     url: 'https://nafisbd.com',
-    image: 'https://nafisbd.com/images/nafis-mahmud-ayon.png',
+    image: 'https://nafisbd.com/nafis-mahmud-ayon.png',
     sameAs: [
       'https://github.com/NafisMahmudAyon',
       'https://www.linkedin.com/in/nafis-mahmud-ayon',
