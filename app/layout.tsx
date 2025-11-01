@@ -7,12 +7,6 @@ import PageLoader from '@/components/PageLoader'
 import { NavbarWrapper } from '@/components/NavbarWrapper'
 import { BackToTop } from '@/components/aspect-ui'
 
-// export const metadata: Metadata = {
-//   title: 'Nafis Mahmud Ayon | Portfolio',
-//   description:
-//     'I am a passionate and versatile software developer with expertise in both frontend and backend technologies. With a strong focus on creating intuitive user experiences, I specialize in building dynamic web applications using modern JavaScript frameworks. My skill set includes proficiency in HTML, CSS, JavaScript, React, Next.js, and Node.js, enabling me to deliver high-quality solutions for a wide range of projects.'
-// }
-
 
 export const metadata: Metadata = {
   title: 'Nafis Mahmud Ayon | Portfolio',
@@ -79,11 +73,6 @@ export const metadata: Metadata = {
       follow: true
     }
   },
-
-  // themeColor: [
-  //   { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-  //   { media: '(prefers-color-scheme: dark)', color: '#000000' }
-  // ]
 }
 
 export default function RootLayout({
@@ -92,7 +81,6 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   const schema = {
-    '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Nafis Mahmud Ayon',
     alternateName: 'Nafis Ayon',
