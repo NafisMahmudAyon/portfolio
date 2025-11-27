@@ -130,7 +130,7 @@ export default function RootLayout({
         <Cursor />
         <NavbarWrapper />
         {children}
-        <BackToTop className='border-primaryColor bg-primaryColor/10 text-primaryColor border p-2 backdrop-blur-xl'>
+        <BackToTop className='border-primaryColor bg-primaryColor/10 text-primaryColor border p-2 backdrop-blur-xl left-5 right-auto'>
           <ChevronUpIcon className='w-6' />
         </BackToTop>
       </body>

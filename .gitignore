@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+portfolio.zip
+app/api/chat/route copy 2.ts
+app/api/chat/route copy.ts
+components/Chatbot copy 2.tsx
+components/Chatbot copy 3.tsx
+components/Chatbot copy 4.tsx
+components/Chatbot copy.tsx
