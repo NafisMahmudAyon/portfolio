@@ -1,7 +1,6 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
 import CallToAction from '@/components/CallToAction/CallToAction'
-import dynamic from 'next/dynamic'
-const Chatbot = dynamic(() => import('@/components/Chatbot'), { ssr: false })
+import ChatbotWrapper from '@/components/ChatbotWrapper'
 import Experience from '@/components/Experience/Experience'
 import Footer from '@/components/Footer/Footer'
 import HeroSection from '@/components/Header/HeroSection'
@@ -20,7 +19,7 @@ export default function Home() {
         <CallToAction />
         <Footer />
       </div>
-      <Chatbot />
+      <ChatbotWrapper />
     </main>
   )
 }
