@@ -2,7 +2,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 // import Image from 'next/image'
-import ProfilePic from '../../public/profilePic.png'
+import ProfilePic from '../../public/profilePic.webp'
 import Image from 'next/image'
 import { poppins } from '@/app/fonts'
 
