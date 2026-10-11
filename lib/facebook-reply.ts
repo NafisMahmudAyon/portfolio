@@ -5,8 +5,6 @@ import BlogPost from '@/models/BlogPost';
 import SocialPost from '@/models/SocialPost';
 
 const APP_URL = (process.env.NEXT_PUBLIC_APP_URL || 'https://nafisbd.com').replace(/\/$/, '');
-const REPLY_MODEL = process.env.GEMINI_REPLY_MODEL || 'gemma-4-31b-it';
-const FALLBACK_MODEL = 'gemini-3.8-flash';
 
 export interface FacebookCommentEventValue {
   item: string;
@@ -278,22 +276,34 @@ RESPOND ONLY WITH A VALID JSON OBJECT (no markdown outside the JSON, no backtick
     };
   };
 
-  try {
-    console.log(`[Facebook AutoReply] Generating replies using model: ${REPLY_MODEL}`);
-    return await tryGenerateWithModel(REPLY_MODEL);
-  } catch (primaryErr: any) {
-    console.warn(`[Facebook AutoReply] Model ${REPLY_MODEL} failed, falling back to ${FALLBACK_MODEL}:`, primaryErr?.message || primaryErr);
+  const preferredModel =
+    process.env.GEMINI_REPLY_MODEL && !process.env.GEMINI_REPLY_MODEL.includes('gemma')
+      ? process.env.GEMINI_REPLY_MODEL
+      : 'gemini-2.5-flash-lite';
+
+  const modelsToTry = Array.from(
+    new Set([
+      preferredModel,
+      'gemini-2.5-flash-lite',
+      'gemini-2.5-flash',
+      'gemini-3.8-flash',
+    ])
+  );
+
+  for (const model of modelsToTry) {
     try {
-      return await tryGenerateWithModel(FALLBACK_MODEL);
-    } catch (fallbackErr: any) {
-      console.error('[Facebook AutoReply] Fallback model also failed:', fallbackErr);
-      // Hardcoded high quality fallback
-      return {
-        publicReply: `Thanks for the comment, ${firstName}! 🙌 I've sent you a quick private message with the full link and details—check your inbox! 🚀`,
-        privateMessage: `Hi ${firstName}! 👋\n\nThanks for checking out my post about ${postTitle}!\n\n🔗 You can read the complete article, code examples, and architecture breakdown here:\n👉 ${targetUrl}\n\nFeel free to explore my latest developer resources and open-source tools at:\n🌐 ${APP_URL}\n\nHave a great day and happy coding! 💻✨\n— Nafis Mahmud Ayon`,
-      };
+      console.log(`[Facebook AutoReply] Generating replies using model: ${model}`);
+      return await tryGenerateWithModel(model);
+    } catch (modelErr: any) {
+      console.warn(`[Facebook AutoReply] Model ${model} failed, trying next:`, modelErr?.message || modelErr);
     }
   }
+
+  // Hardcoded high quality fallback
+  return {
+    publicReply: `Thanks for the comment, ${firstName}! 🙌 I've sent you a quick private message with the full link and details—check your inbox! 🚀`,
+    privateMessage: `Hi ${firstName}! 👋\n\nThanks for checking out my post about ${postTitle}!\n\n🔗 You can read the complete article, code examples, and architecture breakdown here:\n👉 ${targetUrl}\n\nFeel free to explore my latest developer resources and open-source tools at:\n🌐 ${APP_URL}\n\nHave a great day and happy coding! 💻✨\n— Nafis Mahmud Ayon`,
+  };
 }
 
 /**
