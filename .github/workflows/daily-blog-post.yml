@@ -1,0 +1,18 @@
+name: Daily AI Blog Post & Facebook Publisher
+
+on:
+  schedule:
+    # Runs daily at 06:00 UTC (12:00 PM BST)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  publish-daily-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Daily Blog Generator & Facebook Poster
+        run: |
+          curl -X POST "${{ secrets.APP_URL || 'https://nafisbd.com' }}/api/cron/daily-blog" \
+            -H "Content-Type: application/json" \
+            -H "x-social-api-key: ${{ secrets.SOCIAL_API_KEY || 'sk-social-imazgen-x7k9m2p4q8r1w5v3' }}" \
+            -d '{"postToFacebook": true}'

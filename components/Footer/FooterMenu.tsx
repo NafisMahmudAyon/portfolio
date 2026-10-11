@@ -13,7 +13,14 @@ const FooterMenu = () => {
       className={`flex flex-col items-center gap-4 font-light lg:flex-row lg:gap-8 ${poppins.className}`}
     >
       <div className='flex flex-col items-center lg:flex-row lg:gap-3'>
+        <Link href='/blog' className='text-primaryColor hover:underline font-medium'>Tech Blog</Link>
+        <span className='hidden lg:inline text-normalText/40'>•</span>
+        <Link href='/privacy-policy' className='hover:text-primaryColor transition-colors'>Privacy</Link>
+        <span className='hidden lg:inline text-normalText/40'>•</span>
+        <Link href='/terms' className='hover:text-primaryColor transition-colors'>Terms</Link>
+        <span className='hidden lg:inline text-normalText/40'>•</span>
         <a href='tel:+8801733235762'>+880 173 323 5762</a>
+        <span className='hidden lg:inline text-normalText/40'>•</span>
         <a href='mailto:nafismahmudayon@gmail.com'>nafismahmudayon@gmail.com</a>
       </div>
       <ul className='flex items-center gap-2'>

@@ -46,3 +46,8 @@ components/Chatbot copy 2.tsx
 components/Chatbot copy 3.tsx
 components/Chatbot copy 4.tsx
 components/Chatbot copy.tsx
+
+# test scripts
+test-*.ts
+test-*.js
+*.log

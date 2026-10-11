@@ -12,6 +12,7 @@ const Nav = () => {
     { href: '/#about', text: 'About' },
     { href: '/#skills', text: 'Skills' },
     { href: '/#projects', text: 'Projects' },
+    { href: '/blog', text: 'Blog' },
     { href: '/#experience', text: 'Experience' },
   ]
 

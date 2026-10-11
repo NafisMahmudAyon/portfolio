@@ -4,6 +4,7 @@ import "highlight.js/styles/atom-one-dark.css";
 import Image from 'next/image';
 import ReactMarkdown from "react-markdown";
 import rehypeHighlight from 'rehype-highlight';
+import remarkGfm from 'remark-gfm';
 
 interface MarkdownContentProps {
   content: string;
@@ -12,9 +13,10 @@ interface MarkdownContentProps {
 
 const MarkdownContent = ({ content, className = '' }: MarkdownContentProps) => {
   return (
-    <ReactMarkdown
-      // className={`prose prose-lg dark:prose-invert max-w-none blog ${code.variable} ${poppins.variable} ${className}`}
-      rehypePlugins={[rehypeHighlight]}
+    <div className={`prose prose-invert max-w-none text-normalText dark:text-normalDarkText ${className}`}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        rehypePlugins={[rehypeHighlight]}
       components={{
         code: ({ node, className, children, ...props }) => {
           const match = /language-(\w+)/.exec(className || '');
@@ -68,6 +70,7 @@ const MarkdownContent = ({ content, className = '' }: MarkdownContentProps) => {
     >
       {content}
     </ReactMarkdown>
+    </div>
   );
 };
 

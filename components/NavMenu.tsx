@@ -13,6 +13,7 @@ const NavMenu = () => {
           <NavItem text='About' href='/#about' />
           <NavItem text='Skills' href='/#skills' />
           <NavItem text='Projects' href='/#projects' />
+          <NavItem text='Blog' href='/blog' />
           <NavItem text='Experience' href='/#experience' />
         </ul>
       </nav>

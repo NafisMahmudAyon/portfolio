@@ -32,9 +32,26 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'comboblocks.com',
         port: '',
-        pathname: '/**' // Correctly allow all paths under the hostname
+        pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
+        port: '',
+        pathname: '/**'
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-7f5c464716064fe68f07aa031dae3672.r2.dev',
+        port: '',
+        pathname: '/**'
       }
-
     ],
   },
 };
