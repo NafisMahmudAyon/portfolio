@@ -17,8 +17,12 @@ export async function GET(req: NextRequest) {
     const expectedToken =
       process.env.FB_VERIFY_TOKEN ||
       process.env.FACEBOOK_VERIFY_TOKEN ||
-      process.env.FB_WEBHOOK_VERIFY_TOKEN ||
-      'nafisbd_fb_webhook_token_2026';
+      process.env.FB_WEBHOOK_VERIFY_TOKEN;
+
+    if (!expectedToken) {
+      console.error('❌ [Facebook Webhook GET] FB_VERIFY_TOKEN is not configured in environment variables');
+      return new Response('Server configuration error: FB_VERIFY_TOKEN missing', { status: 500 });
+    }
 
     if (mode === 'subscribe' && token === expectedToken) {
       console.log('✅ [Facebook Webhook GET] Webhook verified successfully by Meta.');

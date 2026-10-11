@@ -14,5 +14,5 @@ jobs:
         run: |
           curl -X POST "${{ secrets.APP_URL || 'https://nafisbd.com' }}/api/cron/daily-blog" \
             -H "Content-Type: application/json" \
-            -H "x-social-api-key: ${{ secrets.SOCIAL_API_KEY || 'sk-social-imazgen-x7k9m2p4q8r1w5v3' }}" \
+            -H "x-social-api-key: ${{ secrets.SOCIAL_API_KEY }}" \
             -d '{"postToFacebook": true}'
