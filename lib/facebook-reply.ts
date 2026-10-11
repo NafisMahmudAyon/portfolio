@@ -66,21 +66,22 @@ export async function sendFacebookCommentReply(
 
 /**
  * Sends a private direct message (DM) in response to a public comment
- * Uses Meta's Graph API Private Replies endpoint: POST /{comment-id}/private_replies
+ * Uses Meta's Messenger Platform endpoint: POST /v21.0/me/messages with recipient.comment_id
  */
 export async function sendFacebookPrivateReply(
   commentId: string,
   messageText: string,
   pageAccessToken: string
 ): Promise<{ success: boolean; messageId?: string; error?: string }> {
-  const url = `https://graph.facebook.com/v21.0/${commentId}/private_replies`;
+  const url = `https://graph.facebook.com/v21.0/me/messages`;
 
   try {
     const res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        message: messageText,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        recipient: { comment_id: commentId },
+        message: { text: messageText },
         access_token: pageAccessToken,
       }),
     });
@@ -92,7 +93,7 @@ export async function sendFacebookPrivateReply(
       return { success: false, error: errMsg };
     }
 
-    return { success: true, messageId: data.id };
+    return { success: true, messageId: data.message_id || data.id };
   } catch (err: any) {
     console.error('[Facebook AutoReply] Private Reply Exception:', err);
     return { success: false, error: err.message || 'Network error' };
