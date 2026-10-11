@@ -14,17 +14,21 @@ export async function GET(req: NextRequest) {
     const token = searchParams.get('hub.verify_token');
     const challenge = searchParams.get('hub.challenge');
 
-    const expectedToken =
+    const cleanExpected = (
       process.env.FB_VERIFY_TOKEN ||
       process.env.FACEBOOK_VERIFY_TOKEN ||
-      process.env.FB_WEBHOOK_VERIFY_TOKEN;
+      process.env.FB_WEBHOOK_VERIFY_TOKEN ||
+      ''
+    ).replace(/^['"]|['"]$/g, '').trim();
 
-    if (!expectedToken) {
+    if (!cleanExpected) {
       console.error('❌ [Facebook Webhook GET] FB_VERIFY_TOKEN is not configured in environment variables');
       return new Response('Server configuration error: FB_VERIFY_TOKEN missing', { status: 500 });
     }
 
-    if (mode === 'subscribe' && token === expectedToken) {
+    const cleanToken = (token || '').replace(/^['"]|['"]$/g, '').trim();
+
+    if (mode === 'subscribe' && cleanToken === cleanExpected) {
       console.log('✅ [Facebook Webhook GET] Webhook verified successfully by Meta.');
       return new Response(challenge || '', {
         status: 200,
