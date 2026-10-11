@@ -60,13 +60,12 @@ export async function POST(req: NextRequest) {
         for (const change of entry.changes || []) {
           // Process feed events (comments)
           if (change.field === 'feed' && change.value) {
-            handleIncomingFacebookComment(change.value)
-              .then((res) => {
-                console.log('[Facebook Webhook POST] Processed comment event:', res);
-              })
-              .catch((err) => {
-                console.error('[Facebook Webhook POST] Error processing comment:', err);
-              });
+            try {
+              const res = await handleIncomingFacebookComment(change.value);
+              console.log('[Facebook Webhook POST] Processed comment event:', res);
+            } catch (err) {
+              console.error('[Facebook Webhook POST] Error processing comment:', err);
+            }
           }
         }
       }
