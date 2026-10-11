@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { handleIncomingFacebookComment } from '@/lib/facebook-reply';
 
 export const maxDuration = 60;
@@ -56,21 +56,25 @@ export async function POST(req: NextRequest) {
     console.log('[Facebook Webhook POST] Received event payload:', JSON.stringify(body, null, 2));
 
     if (body.object === 'page') {
-      for (const entry of body.entry || []) {
-        for (const change of entry.changes || []) {
-          // Process feed events (comments)
-          if (change.field === 'feed' && change.value) {
-            try {
-              const res = await handleIncomingFacebookComment(change.value);
-              console.log('[Facebook Webhook POST] Processed comment event:', res);
-            } catch (err) {
-              console.error('[Facebook Webhook POST] Error processing comment:', err);
+      // Use Next.js 15 after() to schedule background processing
+      // This immediately releases the HTTP response to Meta (preventing 504 timeouts and retries)
+      // while keeping the serverless execution context alive until completed.
+      after(async () => {
+        for (const entry of body.entry || []) {
+          for (const change of entry.changes || []) {
+            if (change.field === 'feed' && change.value) {
+              try {
+                const res = await handleIncomingFacebookComment(change.value);
+                console.log('[Facebook Webhook POST] Processed comment event:', res);
+              } catch (err) {
+                console.error('[Facebook Webhook POST] Error processing comment:', err);
+              }
             }
           }
         }
-      }
+      });
 
-      // Meta requires immediate 200 OK response
+      // Meta requires immediate 200 OK response (<20 seconds)
       return NextResponse.json({ status: 'EVENT_RECEIVED' }, { status: 200 });
     }
 

@@ -77,7 +77,7 @@ export default async function BlogPostPage({ params }: Props) {
   const blog = await BlogPost.findOneAndUpdate(
     { slug, isPublished: true },
     { $inc: { views: 1 } },
-    { new: true }
+    { returnDocument: 'after' }
   ).lean();
 
   if (!blog) {

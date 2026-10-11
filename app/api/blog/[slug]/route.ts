@@ -17,7 +17,7 @@ export async function GET(
     const blog = await BlogPost.findOneAndUpdate(
       { slug, isPublished: true },
       { $inc: { views: 1 } },
-      { new: true }
+      { returnDocument: 'after' }
     ).lean();
 
     if (!blog) {

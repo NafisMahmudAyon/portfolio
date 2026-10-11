@@ -242,8 +242,18 @@ RESPOND ONLY WITH A VALID JSON OBJECT (no markdown outside the JSON, no backtick
 
   const ai = new GoogleGenAI({ apiKey: geminiApiKey });
 
+  const withTimeout = <T>(promise: Promise<T>, ms: number, timeoutMsg: string): Promise<T> => {
+    let timer: NodeJS.Timeout;
+    return Promise.race([
+      promise.finally(() => clearTimeout(timer)),
+      new Promise<T>((_, reject) => {
+        timer = setTimeout(() => reject(new Error(timeoutMsg)), ms);
+      }),
+    ]);
+  };
+
   const tryGenerateWithModel = async (modelName: string): Promise<{ publicReply: string; privateMessage: string }> => {
-    const response = await ai.models.generateContent({
+    const callPromise = ai.models.generateContent({
       model: modelName,
       contents: prompt,
       config: {
@@ -251,6 +261,8 @@ RESPOND ONLY WITH A VALID JSON OBJECT (no markdown outside the JSON, no backtick
         responseMimeType: 'application/json',
       },
     });
+
+    const response = await withTimeout(callPromise, 12000, `Model ${modelName} timed out after 12s`);
 
     const rawText = response.text?.trim() || '{}';
     const cleaned = rawText.replace(/^```json\s*/, '').replace(/\s*```$/, '');
