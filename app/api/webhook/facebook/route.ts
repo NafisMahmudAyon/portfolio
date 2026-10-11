@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
     }
 
     console.warn(
-      `⚠️ [Facebook Webhook GET] Token mismatch: received "${token}", expected "${expectedToken}"`
+      `⚠️ [Facebook Webhook GET] Token mismatch: received "${token}", expected "${cleanExpected}"`
     );
     return new Response('Forbidden: Invalid verification token', { status: 403 });
   } catch (err: any) {
