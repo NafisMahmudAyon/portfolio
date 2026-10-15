@@ -201,14 +201,17 @@ export async function handleIncomingFacebookMessage(
     // Reverse to chronological order (oldest to newest)
     recent.reverse();
 
-    for (const msg of recent) {
-      if (msg.userMessage) {
+    // Filter out fallback generic replies
+    const validRecent = (recent as any[]).filter(
+      (m) => m.aiReply && !m.aiReply.includes('will get back to you shortly')
+    );
+
+    for (const msg of validRecent) {
+      if (msg.userMessage && msg.aiReply) {
         historyParts.push({
           role: 'user',
           parts: [{ text: msg.userMessage }],
         });
-      }
-      if (msg.aiReply) {
         historyParts.push({
           role: 'model',
           parts: [{ text: msg.aiReply }],
@@ -260,44 +263,62 @@ GUIDELINES:
 5. Formatting: Keep responses conversational and easy to read on mobile Messenger. Use bullet points and line breaks. Avoid massive text walls.
 `;
 
+  const withTimeout = <T>(promise: Promise<T>, ms: number, timeoutMsg: string): Promise<T> => {
+    let timer: NodeJS.Timeout;
+    return Promise.race([
+      promise.finally(() => clearTimeout(timer)),
+      new Promise<T>((_, reject) => {
+        timer = setTimeout(() => reject(new Error(timeoutMsg)), ms);
+      }),
+    ]);
+  };
+
   const ai = new GoogleGenAI({ apiKey: geminiApiKey });
-  const modelName = process.env.GEMINI_REPLY_MODEL || 'gemini-2.5-flash';
+
+  const preferredModel =
+    process.env.GEMINI_REPLY_MODEL && !process.env.GEMINI_REPLY_MODEL.includes('gemma')
+      ? process.env.GEMINI_REPLY_MODEL
+      : 'gemini-2.5-flash-lite';
+
+  const modelsToTry = Array.from(
+    new Set([
+      preferredModel,
+      'gemini-2.5-flash-lite',
+      'gemini-2.5-flash',
+      'gemini-2.0-flash',
+      'gemini-1.5-flash',
+    ])
+  );
 
   let aiReply = '';
-  let modelUsed = modelName;
+  let modelUsed = preferredModel;
 
-  try {
-    const response = await ai.models.generateContent({
-      model: modelName,
-      contents: [...historyParts, { role: 'user', parts: currentParts }],
-      config: {
-        systemInstruction,
-        temperature: 0.7,
-      },
-    });
-
-    aiReply = response.text?.trim() || '';
-  } catch (geminiErr: any) {
-    console.warn(`[Facebook Messenger] ${modelName} failed, falling back to gemini-1.5-flash:`, geminiErr?.message);
+  for (const model of modelsToTry) {
     try {
-      modelUsed = 'gemini-1.5-flash';
-      const fallbackRes = await ai.models.generateContent({
-        model: modelUsed,
+      console.log(`[Facebook Messenger] Generating reply using model: ${model}`);
+      const callPromise = ai.models.generateContent({
+        model,
         contents: [...historyParts, { role: 'user', parts: currentParts }],
         config: {
           systemInstruction,
           temperature: 0.7,
         },
       });
-      aiReply = fallbackRes.text?.trim() || '';
-    } catch (fallbackErr: any) {
-      console.error('[Facebook Messenger] All Gemini models failed:', fallbackErr);
-      aiReply = "Thanks for messaging Nafis Mahmud Ayon! I received your message and will get back to you shortly. Feel free to check out my latest projects and tutorials at https://nafisbd.com.";
+
+      const response = await withTimeout(callPromise, 10000, `Model ${model} timed out after 10s`);
+      const text = response.text?.trim();
+      if (text) {
+        aiReply = text;
+        modelUsed = model;
+        break;
+      }
+    } catch (modelErr: any) {
+      console.warn(`[Facebook Messenger] Model ${model} failed, trying next:`, modelErr?.message || modelErr);
     }
   }
 
   if (!aiReply) {
-    aiReply = "Hi there! Thanks for reaching out. How can I help you today? Feel free to check out my website at https://nafisbd.com.";
+    aiReply = "Hi! Thanks for reaching out to Nafis Mahmud Ayon. Feel free to explore my latest projects, tutorials, and open-source tools at https://nafisbd.com.";
   }
 
   // 4. Send response via Facebook Graph API
