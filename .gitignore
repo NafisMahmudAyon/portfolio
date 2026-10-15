@@ -51,3 +51,4 @@ components/Chatbot copy.tsx
 test-*.ts
 test-*.js
 *.log
+n8n

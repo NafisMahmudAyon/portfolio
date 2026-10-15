@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse, after } from 'next/server';
 import { handleIncomingFacebookComment } from '@/lib/facebook-reply';
+import { handleIncomingFacebookMessage } from '@/lib/facebook-messenger';
 
 export const maxDuration = 60;
 
@@ -47,8 +48,8 @@ export async function GET(req: NextRequest) {
 }
 
 /**
- * POST Handler — Receive Real-Time Events (Comments, Feed Changes, etc.)
- * Meta pushes event pings whenever a user interacts with the page feed.
+ * POST Handler — Receive Real-Time Events (Comments, Feed Changes, Messenger Chats, etc.)
+ * Meta pushes event pings whenever a user interacts with the page feed or Messenger.
  */
 export async function POST(req: NextRequest) {
   try {
@@ -61,6 +62,7 @@ export async function POST(req: NextRequest) {
       // while keeping the serverless execution context alive until completed.
       after(async () => {
         for (const entry of body.entry || []) {
+          // 1. Process Facebook Feed Comments (Auto-reply & DM)
           for (const change of entry.changes || []) {
             if (change.field === 'feed' && change.value) {
               try {
@@ -68,6 +70,18 @@ export async function POST(req: NextRequest) {
                 console.log('[Facebook Webhook POST] Processed comment event:', res);
               } catch (err) {
                 console.error('[Facebook Webhook POST] Error processing comment:', err);
+              }
+            }
+          }
+
+          // 2. Process Facebook Messenger Direct Messages (Text, Audio, Image)
+          for (const msgEvent of entry.messaging || []) {
+            if (msgEvent.message || msgEvent.postback) {
+              try {
+                const res = await handleIncomingFacebookMessage(msgEvent);
+                console.log('[Facebook Webhook POST] Processed messenger event:', res);
+              } catch (err) {
+                console.error('[Facebook Webhook POST] Error processing messenger event:', err);
               }
             }
           }
