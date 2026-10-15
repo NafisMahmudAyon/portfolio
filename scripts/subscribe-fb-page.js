@@ -53,7 +53,7 @@ async function subscribePage() {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({
-        subscribed_fields: 'feed',
+        subscribed_fields: 'feed,messages,messaging_postbacks',
         access_token: pageToken,
       }),
     });
